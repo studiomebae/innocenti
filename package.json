@@ -1,0 +1,1 @@
+{"name":"innocenti","version":"1.0.0","private":true,"scripts":{"dev":"node server.js","start":"node server.js","test":"node --test"},"devDependencies":{"playwright":"^1.64.1"}}
