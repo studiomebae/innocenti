@@ -1,21 +1,33 @@
 # Innocenti — Abitare la Toscana
 
-Sito in italiano per affitti brevi in Toscana, con catalogo filtrabile, dettagli delle dimore e richiesta di soggiorno dimostrativa.
+Sito in italiano per affitti brevi in Toscana. Sfondo bianco, margini laterali di 20 px (16 px su mobile), titoli serif Playfair Display con fallback Georgia e testi Helvetica/Arial. Il catalogo include filtri per destinazione, capienza e tipologia.
+
+## Pagine
+
+- `/`: presentazione e catalogo delle quattro dimore dimostrative.
+- `/dimore/casale-degli-ulivi.html`
+- `/dimore/la-terrazza-di-firenze.html`
+- `/dimore/villa-le-vigne.html`
+- `/dimore/il-giardino-segreto.html`
+- `/servizi.html`: servizi per ospiti e proprietari/host.
+- `/contatti.html`: recapiti di esempio e modulo dimostrativo.
+
+Ogni pagina della dimora include carosello con frecce, miniature, navigazione da tastiera e swipe, specifiche, camere, dotazioni, località, regole e richiesta di soggiorno. Date e ospiti vengono conservati quando si passa dal catalogo alla dimora.
 
 ## Avvio
 
-Node.js 24. Eseguire `npm ci` e `npm run dev` nella directory del progetto. Il server usa la porta 3000 (modificabile tramite `PORT`). Non sono necessarie dipendenze per l'applicazione; Playwright è usato solo per i test.
+Con Node.js 24, eseguire `npm ci` e `npm run dev` nella directory del progetto. Il server usa la porta 3000, modificabile tramite `PORT`. Il sito pubblicato è interamente statico; il server Node serve solo per lo sviluppo locale.
 
-## Verifica
+## Test
 
-Con il server avviato, eseguire `npm test`. I test utilizzano Chromium in `/usr/bin/chromium`; impostare `CHROMIUM_PATH` per usare un'altra installazione. Verificano filtri, dettaglio della dimora, stima del soggiorno, download del riepilogo e assenza di overflow orizzontale su mobile.
+Con il server avviato, eseguire `npm test`. I test utilizzano Chromium in `/usr/bin/chromium`; impostare `CHROMIUM_PATH` per un'altra installazione. Verificano filtri, navigazione, date, richieste, caroselli, schede delle dimore, modulo contatti e layout da 320 a 1440 px.
 
-## Contenuti e prenotazioni
+## Contenuti dimostrativi
 
-Le quattro dimore, descrizioni e tariffe sono dimostrative. Le fotografie sono illustrative, caricate da Unsplash; i font da Google Fonts. Le richieste sono elaborate nel browser e possono essere scaricate, ma non vengono inviate o memorizzate su un server. Nessun pagamento o blocco delle disponibilità viene eseguito. Prima del lancio, inserire immobili reali e collegare un servizio di prenotazione con disponibilità, conferme, pagamenti e informativa privacy.
+Le dimore, specifiche, tariffe, regole e recapiti sono di esempio. Le fotografie illustrative provengono da Unsplash e non rappresentano proprietà verificate. Playfair Display viene caricato da Google Fonts. Nessuna richiesta viene inviata a un server: i moduli generano riepiloghi scaricabili nel browser, senza conferme, pagamenti o blocco delle disponibilità.
 
-Il sito di riferimento non era accessibile durante lo sviluppo; il design è una proposta originale in stile immobiliare di lusso, senza garanzia di corrispondenza esatta.
+Prima del lancio reale, sostituire i contenuti con immobili e recapiti reali e collegare disponibilità, prenotazioni e gestione dei contatti. Definire inoltre servizi effettivamente offerti, condizioni contrattuali e informativa privacy. Il design è originale: il sito di riferimento non era accessibile durante lo sviluppo.
 
 ## Netlify
 
-Il file `netlify.toml` configura la pubblicazione statica della cartella `public`, senza comando di build. Nel pannello Netlify importare `studiomebae/innocenti` da GitHub, autorizzare l'accesso al repository e scegliere il branch `main`. Il server Node è necessario solo per lo sviluppo locale. La pubblicazione non aggiunge un backend di prenotazione.
+`netlify.toml` pubblica la cartella `public`, senza comando di build. Importare `studiomebae/innocenti` da GitHub, autorizzare l'accesso e scegliere `main`. Se il repository è già collegato e i deploy automatici sono abilitati, un push su `main` avvia il nuovo deploy. La pubblicazione statica non aggiunge un backend di prenotazione.
