@@ -1,0 +1,60 @@
+{
+  "id": 1,
+  "slug": "casale-degli-ulivi",
+  "name": "Casale degli Ulivi",
+  "place": "Val d’Orcia",
+  "type": "Campagna",
+  "pool": true,
+  "guests": 6,
+  "bedrooms": 3,
+  "baths": 2,
+  "price": 280,
+  "description": "Un rifugio tra le colline della Val d’Orcia. Pietra, luce e spazi aperti, con una piscina privata e un giardino dove ritrovare il piacere delle giornate lente.",
+  "kind": "Casale indipendente",
+  "area": 150,
+  "accessibility": "Da confermare prima della prenotazione",
+  "photos": [
+    {
+      "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1800&q=80",
+      "alt": "La dimora — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Il soggiorno — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Gli interni — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Gli spazi esterni — foto illustrativa"
+    }
+  ],
+  "beds": [
+    "Camera 1 · letto matrimoniale",
+    "Camera 2 · letto matrimoniale",
+    "Camera 3 · due letti singoli"
+  ],
+  "amenities": [
+    "Piscina privata stagionale",
+    "Giardino privato",
+    "Parcheggio nella proprietà",
+    "Patio con tavolo da pranzo",
+    "Wi-Fi",
+    "Cucina attrezzata",
+    "Forno e frigorifero",
+    "Macchina del caffè",
+    "Lavatrice",
+    "Biancheria e asciugamani",
+    "Riscaldamento",
+    "Asciugacapelli"
+  ],
+  "rules": [
+    "Check-in: dalle 15:00, da concordare",
+    "Check-out: entro le 10:00",
+    "Non è consentito fumare all’interno",
+    "Feste ed eventi non consentiti",
+    "Animali: su richiesta"
+  ]
+}

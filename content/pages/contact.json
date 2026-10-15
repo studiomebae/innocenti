@@ -1,0 +1,47 @@
+{
+  "seo": {
+    "text_01": "Contatti — Innocenti",
+    "description": "Contatta Innocenti per soggiorni in Toscana e servizi per proprietari e host."
+  },
+  "page_intro": {
+    "text_01": "CONTATTI",
+    "text_02": "Ogni bel soggiorno",
+    "text_03": "inizia con",
+    "text_04": "un ciao.",
+    "text_05": "Una domanda sulla tua prossima vacanza o un progetto per la tua proprietà? Raccontaci quello che hai in mente."
+  },
+  "contact_details": {
+    "text_01": "Parliamone",
+    "text_02": "insieme.",
+    "text_03": "EMAIL",
+    "text_04": "info@innocenti.example",
+    "text_05": "TELEFONO",
+    "text_06": "+39 000 000 0000",
+    "text_07": "INDIRIZZO",
+    "text_08": "Via Esempio 10",
+    "text_09": "Firenze, Toscana · Italia",
+    "text_10": "ORARI DI ESEMPIO",
+    "text_11": "Lunedì – venerdì",
+    "text_12": "09:00 – 18:00",
+    "text_13": "Sei un proprietario? Scopri i servizi ↗"
+  },
+  "contact_form_panel": {
+    "text_01": "LASCIACI UN MESSAGGIO",
+    "text_02": "Ti ascoltiamo.",
+    "text_03": "Compila il modulo per preparare un messaggio. In questa demo non viene inviato: potrai scaricarne il riepilogo.",
+    "text_04": "Nome e cognome",
+    "text_05": "Email",
+    "text_06": "Telefono",
+    "text_07": "(facoltativo)",
+    "text_08": "Come possiamo aiutarti?",
+    "text_09": "Vorrei organizzare un soggiorno",
+    "text_10": "Sono un proprietario / host",
+    "text_11": "Vorrei altre informazioni",
+    "text_12": "Il tuo messaggio",
+    "text_13": "Prepara il messaggio ↗",
+    "text_14": "Il tuo messaggio è pronto.",
+    "text_15": "Nessun invio effettuato. Scarica il riepilogo per conservarlo sul tuo dispositivo.",
+    "text_16": "Scarica il messaggio ↓",
+    "text_17": "Scrivi un altro messaggio"
+  }
+}

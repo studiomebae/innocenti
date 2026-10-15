@@ -1,0 +1,6 @@
+body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.cms-help { box-sizing: border-box; background: #fff; color: #333c32; border-bottom: 1px solid #e3e5dc; min-height: 75px; padding: 12px 20px; display: flex; align-items: center; gap: 25px; }
+.cms-brand { font: 30px Georgia, serif; letter-spacing: -1px; color: inherit; text-decoration: none; }
+.cms-help p { font-size: 14px; }
+.cms-help > a:last-child { margin-left: auto; font-size: 13px; color: #626b50; }
+@media (max-width: 640px) { .cms-help { flex-wrap: wrap; gap: 10px 20px; } .cms-help p { margin: 0; } .cms-help > a:last-child { margin-left: 0; } }

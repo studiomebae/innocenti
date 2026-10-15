@@ -1,0 +1,805 @@
+locale: it
+backend:
+  name: github
+  repo: studiomebae/innocenti
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  commit_messages:
+    update: "Aggiorna {{collection}}: {{slug}}"
+    uploadMedia: "Carica immagine: {{path}}"
+media_folder: public/uploads
+public_folder: /uploads
+publish_mode: simple
+show_preview_links: false
+editor:
+  preview: false
+collections:
+  - name: pages
+    label: Testi delle pagine
+    description: Modifica i testi e premi Pubblica. Netlify aggiornerà il sito al
+      termine del deploy.
+    files:
+      - name: home
+        label: Homepage
+        file: content/pages/home.json
+        format: json
+        fields:
+          - label: Titolo e descrizione per i motori di ricerca
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Titolo della pagina
+                name: text_01
+                widget: string
+              - label: Descrizione per Google
+                name: description
+                widget: text
+          - label: Copertina
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - label: Sopratitolo della copertina
+                name: text_01
+                widget: string
+              - label: Titolo – prima riga
+                name: text_02
+                widget: string
+              - label: Titolo – seconda riga
+                name: text_03
+                widget: string
+              - label: Titolo – parte in corsivo
+                name: text_04
+                widget: string
+              - label: Sottotitolo – prima riga
+                name: text_05
+                widget: string
+              - label: Sottotitolo – seconda riga
+                name: text_06
+                widget: string
+              - label: Esplora le nostre dimore
+                name: text_07
+                widget: string
+              - label: 43°46′ N   11°15′ E   —   TOSCANA, ITALIA
+                name: text_08
+                widget: string
+              - label: SCOPRI, RESPIRA, RALLENTA   ↓
+                name: text_09
+                widget: string
+          - label: Ricerca soggiorni
+            name: search
+            widget: object
+            collapsed: true
+            fields:
+              - label: DESTINAZIONE
+                name: text_01
+                widget: string
+              - label: ARRIVO
+                name: text_02
+                widget: string
+              - label: PARTENZA
+                name: text_03
+                widget: string
+              - label: OSPITI
+                name: text_04
+                widget: string
+              - label: 2 ospiti
+                name: text_05
+                widget: string
+              - label: 4 ospiti
+                name: text_06
+                widget: string
+              - label: 6 ospiti
+                name: text_07
+                widget: string
+              - label: 8 ospiti
+                name: text_08
+                widget: string
+              - label: Cerca una dimora
+                name: text_09
+                widget: string
+          - label: Presentazione
+            name: intro
+            widget: object
+            collapsed: true
+            fields:
+              - label: BENVENUTI NEL MONDO INNOCENTI
+                name: text_01
+                widget: string
+              - label: "Titolo: Non un posto qualsiasi."
+                name: text_02
+                widget: string
+              - label: "Corsivo: Il tuo posto in Toscana."
+                name: text_03
+                widget: string
+              - label: Un casale tra gli ulivi, una terrazza sui tetti di Firenze, una villa
+                  dove il tempo s
+                name: text_04
+                widget: text
+              - label: Lasciati ispirare
+                name: text_05
+                widget: string
+          - label: Collezione delle dimore
+            name: homes
+            widget: object
+            collapsed: true
+            fields:
+              - label: LA NOSTRA COLLEZIONE
+                name: text_01
+                widget: string
+              - label: "Titolo: Dimore da"
+                name: text_02
+                widget: string
+              - label: "Corsivo: vivere."
+                name: text_03
+                widget: string
+              - label: Piccole fughe, grandi ricordi.
+                name: text_04
+                widget: string
+              - label: Trova la casa che ti somiglia.
+                name: text_05
+                widget: string
+              - label: Tutte le dimore
+                name: text_06
+                widget: string
+              - label: In campagna
+                name: text_07
+                widget: string
+              - label: In città
+                name: text_08
+                widget: string
+              - label: Con piscina
+                name: text_09
+                widget: string
+              - label: UNA SELEZIONE, MAI UN CATALOGO QUALSIASI
+                name: text_10
+                widget: string
+              - label: "Nessuna dimora corrisponde ai filtri selezionati. Prova un’altra
+                  destinazione o meno "
+                name: text_11
+                widget: text
+          - label: Il territorio
+            name: territory
+            widget: object
+            collapsed: true
+            fields:
+              - label: UN TERRITORIO, MILLE EMOZIONI
+                name: text_01
+                widget: string
+              - label: "Titolo: Il lusso di"
+                name: text_02
+                widget: string
+              - label: "Corsivo: sentirsi qui."
+                name: text_03
+                widget: string
+              - label: Strade bianche, borghi senza tempo e tavole da condividere. La bellezza
+                  della Toscana
+                name: text_04
+                widget: text
+              - label: Trova il tuo angolo di Toscana
+                name: text_05
+                widget: string
+          - label: Invito finale
+            name: closing
+            widget: object
+            collapsed: true
+            fields:
+              - label: IL PROSSIMO RICORDO COMINCIA QUI
+                name: text_01
+                widget: string
+              - label: "Titolo: Prenditi il tuo"
+                name: text_02
+                widget: string
+              - label: "Corsivo: tempo."
+                name: text_03
+                widget: string
+              - label: "Titolo: Al resto pensa la Toscana."
+                name: text_04
+                widget: string
+              - label: Scegli la tua dimora ↗
+                name: text_05
+                widget: string
+      - name: services
+        label: Servizi e host
+        file: content/pages/services.json
+        format: json
+        fields:
+          - label: Titolo e descrizione per i motori di ricerca
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Titolo della pagina
+                name: text_01
+                widget: string
+              - label: Descrizione per Google
+                name: description
+                widget: text
+          - label: Introduzione della pagina
+            name: page_intro
+            widget: object
+            collapsed: true
+            fields:
+              - label: IL MONDO INNOCENTI
+                name: text_01
+                widget: string
+              - label: "Titolo: L’ospitalità è un’arte."
+                name: text_02
+                widget: string
+              - label: "Corsivo: Ci prendiamo cura dei dettagli."
+                name: text_03
+                widget: string
+              - label: Per chi cerca una casa da vivere e per chi desidera condividere la
+                  propria. Un percor
+                name: text_04
+                widget: text
+              - label: Per chi viaggia ↓
+                name: text_05
+                widget: string
+              - label: Per chi ospita ↓
+                name: text_06
+                widget: string
+          - label: Servizi per gli ospiti
+            name: ospiti
+            widget: object
+            collapsed: true
+            fields:
+              - label: PER I NOSTRI OSPITI
+                name: text_01
+                widget: string
+              - label: "Titolo: Tu pensa a"
+                name: text_02
+                widget: string
+              - label: "Corsivo: partire."
+                name: text_03
+                widget: string
+              - label: Dalla scelta della dimora
+                name: text_04
+                widget: string
+              - label: all’ultimo giorno di vacanza.
+                name: text_05
+                widget: string
+              - label: "Titolo: La dimora giusta"
+                name: text_06
+                widget: string
+              - label: "Una selezione di case per coppie, famiglie e gruppi. Ti aiutiamo a
+                  trovare gli spazi "
+                name: text_07
+                widget: text
+              - label: "Titolo: Accoglienza e assistenza"
+                name: text_08
+                widget: string
+              - label: "Informazioni prima dell’arrivo, indicazioni per il check-in e un
+                  riferimento durante "
+                name: text_09
+                widget: text
+              - label: "Titolo: Esperienze sul territorio"
+                name: text_10
+                widget: string
+              - label: Idee per scoprire borghi, cantine, artigiani e tavole toscane. Esperienze
+                  e servizi e
+                name: text_11
+                widget: text
+          - label: Servizi per i proprietari
+            name: host
+            widget: object
+            collapsed: true
+            fields:
+              - label: PER PROPRIETARI E HOST
+                name: text_01
+                widget: string
+              - label: "Titolo: La tua casa."
+                name: text_02
+                widget: string
+              - label: "Corsivo: Il suo prossimo capitolo."
+                name: text_03
+                widget: string
+              - label: Diamo spazio al potenziale
+                name: text_04
+                widget: string
+              - label: della tua proprietà.
+                name: text_05
+                widget: string
+              - label: "Titolo: Valutazione e strategia"
+                name: text_06
+                widget: string
+              - label: "Analisi della dimora, del territorio e degli ospiti ideali. Un piano per
+                  posizionare "
+                name: text_07
+                widget: text
+              - label: "Titolo: Presentazione dell’immobile"
+                name: text_08
+                widget: string
+              - label: Supporto per fotografie, descrizioni e preparazione degli ambienti, per
+                  raccontare ci
+                name: text_09
+                widget: text
+              - label: "Titolo: Annunci e calendari"
+                name: text_10
+                widget: string
+              - label: Organizzazione degli annunci, aggiornamento delle disponibilità e
+                  supporto nella gest
+                name: text_11
+                widget: text
+              - label: "Titolo: Ospitalità quotidiana"
+                name: text_12
+                widget: string
+              - label: Coordinamento di check-in, check-out e comunicazioni con gli ospiti,
+                  secondo le esige
+                name: text_13
+                widget: text
+              - label: "Titolo: Cura della proprietà"
+                name: text_14
+                widget: string
+              - label: "Organizzazione di pulizie, biancheria e manutenzione attraverso
+                  fornitori concordati "
+                name: text_15
+                widget: text
+              - label: "Titolo: Una gestione trasparente"
+                name: text_16
+                widget: string
+              - label: Report sull’andamento dei soggiorni e supporto organizzativo per gli
+                  adempimenti, con
+                name: text_17
+                widget: text
+          - label: Come funziona
+            name: process
+            widget: object
+            collapsed: true
+            fields:
+              - label: COMINCIAMO DA UNA CONVERSAZIONE
+                name: text_01
+                widget: string
+              - label: "Titolo: Un percorso"
+                name: text_02
+                widget: string
+              - label: "Corsivo: semplice."
+                name: text_03
+                widget: string
+              - label: Raccontaci la tua casa
+                name: text_04
+                widget: string
+              - label: Località, spazi e obiettivi. Partiamo da qui.
+                name: text_05
+                widget: string
+              - label: Costruiamo una proposta
+                name: text_06
+                widget: string
+              - label: Definiamo insieme attività e modalità di collaborazione.
+                name: text_07
+                widget: string
+              - label: Prepariamo l’accoglienza
+                name: text_08
+                widget: string
+              - label: Organizziamo i dettagli per dare inizio al percorso.
+                name: text_09
+                widget: string
+              - label: Parliamo della tua proprietà ↗
+                name: text_10
+                widget: string
+      - name: contact
+        label: Contatti
+        file: content/pages/contact.json
+        format: json
+        fields:
+          - label: Titolo e descrizione per i motori di ricerca
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Titolo della pagina
+                name: text_01
+                widget: string
+              - label: Descrizione per Google
+                name: description
+                widget: text
+          - label: Introduzione della pagina
+            name: page_intro
+            widget: object
+            collapsed: true
+            fields:
+              - label: CONTATTI
+                name: text_01
+                widget: string
+              - label: "Titolo: Ogni bel soggiorno"
+                name: text_02
+                widget: string
+              - label: "Titolo: inizia con"
+                name: text_03
+                widget: string
+              - label: "Corsivo: un ciao."
+                name: text_04
+                widget: string
+              - label: Una domanda sulla tua prossima vacanza o un progetto per la tua
+                  proprietà? Raccontaci
+                name: text_05
+                widget: text
+          - label: Recapiti
+            name: contact_details
+            widget: object
+            collapsed: true
+            fields:
+              - label: "Titolo: Parliamone"
+                name: text_01
+                widget: string
+              - label: "Corsivo: insieme."
+                name: text_02
+                widget: string
+              - label: EMAIL
+                name: text_03
+                widget: string
+              - label: Email di contatto
+                name: text_04
+                widget: string
+              - label: TELEFONO
+                name: text_05
+                widget: string
+              - label: Numero di telefono
+                name: text_06
+                widget: string
+              - label: INDIRIZZO
+                name: text_07
+                widget: string
+              - label: Indirizzo – via e numero
+                name: text_08
+                widget: string
+              - label: Indirizzo – città e territorio
+                name: text_09
+                widget: string
+              - label: ORARI DI ESEMPIO
+                name: text_10
+                widget: string
+              - label: Giorni di apertura
+                name: text_11
+                widget: string
+              - label: Orari di apertura
+                name: text_12
+                widget: string
+              - label: Sei un proprietario? Scopri i servizi ↗
+                name: text_13
+                widget: string
+          - label: Modulo contatti
+            name: contact_form_panel
+            widget: object
+            collapsed: true
+            fields:
+              - label: LASCIACI UN MESSAGGIO
+                name: text_01
+                widget: string
+              - label: "Titolo: Ti ascoltiamo."
+                name: text_02
+                widget: string
+              - label: "Compila il modulo per preparare un messaggio. In questa demo non viene
+                  inviato: potra"
+                name: text_03
+                widget: text
+              - label: Nome e cognome
+                name: text_04
+                widget: string
+              - label: Email
+                name: text_05
+                widget: string
+              - label: Telefono
+                name: text_06
+                widget: string
+              - label: (facoltativo)
+                name: text_07
+                widget: string
+              - label: Come possiamo aiutarti?
+                name: text_08
+                widget: string
+              - label: Vorrei organizzare un soggiorno
+                name: text_09
+                widget: string
+              - label: Sono un proprietario / host
+                name: text_10
+                widget: string
+              - label: Vorrei altre informazioni
+                name: text_11
+                widget: string
+              - label: Il tuo messaggio
+                name: text_12
+                widget: string
+              - label: Prepara il messaggio ↗
+                name: text_13
+                widget: string
+              - label: "Titolo: Il tuo messaggio è pronto."
+                name: text_14
+                widget: string
+              - label: Nessun invio effettuato. Scarica il riepilogo per conservarlo sul tuo
+                  dispositivo.
+                name: text_15
+                widget: string
+              - label: Scarica il messaggio ↓
+                name: text_16
+                widget: string
+              - label: Scrivi un altro messaggio
+                name: text_17
+                widget: string
+      - name: property
+        label: Testi comuni delle schede dimore
+        file: content/pages/property.json
+        format: json
+        fields:
+          - label: Presentazione della dimora
+            name: property_heading
+            widget: object
+            collapsed: true
+            fields:
+              - label: ← Tutte le dimore
+                name: text_01
+                widget: string
+          - label: Sezioni della scheda
+            name: property_information
+            widget: object
+            collapsed: true
+            fields:
+              - label: LA TUA CASA, LONTANO DA CASA
+                name: text_01
+                widget: string
+              - label: "Titolo: Un soggiorno da"
+                name: text_02
+                widget: string
+              - label: "Corsivo: ricordare."
+                name: text_03
+                widget: string
+              - label: Intera dimora
+                name: text_04
+                widget: string
+              - label: Tutti gli spazi, solo per te.
+                name: text_05
+                widget: string
+              - label: Il ritmo della Toscana
+                name: text_06
+                widget: string
+              - label: Una casa da vivere, senza fretta.
+                name: text_07
+                widget: string
+              - label: "Titolo: La dimora in dettaglio"
+                name: text_08
+                widget: string
+              - label: "Titolo: Dove dormirai"
+                name: text_09
+                widget: string
+              - label: "Titolo: Cosa troverai"
+                name: text_10
+                widget: string
+              - label: "Titolo: Dove ti troverai"
+                name: text_11
+                widget: string
+              - label: "Titolo: Il tuo punto di partenza."
+                name: text_12
+                widget: string
+              - label: Tra passeggiate, sapori locali e luoghi da scoprire. L’indirizzo esatto e
+                  le indicazi
+                name: text_13
+                widget: text
+              - label: "Titolo: Prima di partire"
+                name: text_14
+                widget: string
+              - label: "Titolo: Regole della casa"
+                name: text_15
+                widget: string
+              - label: "Titolo: Informazioni utili"
+                name: text_16
+                widget: string
+              - label: Accessibilità, dotazioni per bambini e caratteristiche di sicurezza
+                  devono essere ver
+                name: text_17
+                widget: text
+              - label: Politica di cancellazione, eventuale deposito, pulizie e tassa di
+                  soggiorno saranno c
+                name: text_18
+                widget: text
+          - label: Riquadro soggiorno
+            name: booking_card
+            widget: object
+            collapsed: true
+            fields:
+              - label: IL TUO PROSSIMO SOGGIORNO
+                name: text_01
+                widget: string
+              - label: da
+                name: text_02
+                widget: string
+              - label: / notte
+                name: text_03
+                widget: string
+              - label: Una piccola fuga, un nuovo ricordo.
+                name: text_04
+                widget: string
+              - label: Capienza
+                name: text_05
+                widget: string
+              - label: Soggiorno
+                name: text_06
+                widget: string
+              - label: Affitto breve
+                name: text_07
+                widget: string
+              - label: Richiedi il soggiorno ↗
+                name: text_08
+                widget: string
+              - label: Hai una domanda? Contattaci ↗
+                name: text_09
+                widget: string
+  - name: site
+    label: Menu e piè di pagina
+    files:
+      - name: site
+        label: Navigazione e informazioni comuni
+        file: content/site.json
+        format: json
+        fields:
+          - label: Testata e navigazione
+            name: header
+            widget: object
+            collapsed: true
+            fields:
+              - label: innocenti
+                name: text_01
+                widget: string
+              - label: REAL ESTATE · TOSCANA
+                name: text_02
+                widget: string
+              - label: Le nostre dimore
+                name: text_03
+                widget: string
+              - label: Servizi
+                name: text_04
+                widget: string
+              - label: Per gli host
+                name: text_05
+                widget: string
+              - label: Contatti
+                name: text_06
+                widget: string
+              - label: Trova il tuo soggiorno
+                name: text_07
+                widget: string
+          - label: Piè di pagina
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - label: innocenti
+                name: text_01
+                widget: string
+              - label: REAL ESTATE · TOSCANA
+                name: text_02
+                widget: string
+              - label: Un altro modo di abitare la bellezza.
+                name: text_03
+                widget: string
+              - label: Le dimore
+                name: text_04
+                widget: string
+              - label: Servizi
+                name: text_05
+                widget: string
+              - label: Contatti
+                name: text_06
+                widget: string
+              - label: Area cliente
+                name: text_07
+                widget: string
+              - label: © 2026 Innocenti · Progetto dimostrativo
+                name: text_08
+                widget: string
+  - name: homes
+    label: Le dimore
+    files:
+      - name: casale-degli-ulivi
+        label: Casale degli Ulivi
+        file: content/dimore/casale-degli-ulivi.json
+        format: json
+        fields: &a1
+          - name: id
+            widget: hidden
+          - name: slug
+            widget: hidden
+          - name: name
+            label: Nome della dimora
+            widget: string
+          - name: place
+            label: Località
+            widget: string
+          - name: type
+            label: Categoria
+            widget: select
+            options:
+              - Campagna
+              - Città
+          - name: kind
+            label: Tipologia di alloggio
+            widget: string
+          - name: description
+            label: Descrizione della dimora
+            widget: text
+          - name: price
+            label: Prezzo indicativo per notte (€)
+            widget: number
+            value_type: int
+            min: 0
+          - name: guests
+            label: Numero massimo di ospiti
+            widget: number
+            value_type: int
+            min: 1
+          - name: bedrooms
+            label: Camere da letto
+            widget: number
+            value_type: int
+            min: 1
+          - name: baths
+            label: Bagni
+            widget: number
+            value_type: int
+            min: 1
+          - name: area
+            label: Superficie (m²)
+            widget: number
+            value_type: int
+            min: 1
+          - name: pool
+            label: Ha una piscina
+            widget: boolean
+          - name: accessibility
+            label: Piano e accessibilità
+            widget: text
+          - name: photos
+            label: Fotografie
+            label_singular: Foto
+            widget: list
+            min: 1
+            max: 30
+            summary: "{{fields.alt}}"
+            fields:
+              - name: image
+                label: Fotografia
+                widget: image
+                allow_multiple: false
+              - name: alt
+                label: Descrizione della foto (accessibilità)
+                widget: string
+          - name: beds
+            label: Camere e letti
+            widget: list
+            field:
+              name: bed
+              label: Camera e letti
+              widget: string
+            min: 1
+          - name: amenities
+            label: Dotazioni e servizi
+            widget: list
+            field:
+              name: amenity
+              label: Dotazione
+              widget: string
+            min: 1
+          - name: rules
+            label: Regole della casa
+            widget: list
+            field:
+              name: rule
+              label: Regola
+              widget: string
+            min: 1
+      - name: la-terrazza-di-firenze
+        label: La Terrazza di Firenze
+        file: content/dimore/la-terrazza-di-firenze.json
+        format: json
+        fields: *a1
+      - name: villa-le-vigne
+        label: Villa Le Vigne
+        file: content/dimore/villa-le-vigne.json
+        format: json
+        fields: *a1
+      - name: il-giardino-segreto
+        label: Il Giardino Segreto
+        file: content/dimore/il-giardino-segreto.json
+        format: json
+        fields: *a1

@@ -1,0 +1,61 @@
+{
+  "id": 3,
+  "slug": "villa-le-vigne",
+  "name": "Villa Le Vigne",
+  "place": "Chianti",
+  "type": "Campagna",
+  "pool": true,
+  "guests": 8,
+  "bedrooms": 4,
+  "baths": 3,
+  "price": 420,
+  "description": "Una villa immersa nel verde del Chianti, pensata per stare insieme. Ampi spazi, piscina privata e un panorama da assaporare, un tramonto alla volta.",
+  "kind": "Villa indipendente",
+  "area": 220,
+  "accessibility": "Da confermare prima della prenotazione",
+  "photos": [
+    {
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1800&q=80",
+      "alt": "La dimora — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Il soggiorno — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Gli interni — foto illustrativa"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1800&q=80",
+      "alt": "Gli spazi esterni — foto illustrativa"
+    }
+  ],
+  "beds": [
+    "Camera 1 · letto matrimoniale",
+    "Camera 2 · letto matrimoniale",
+    "Camera 3 · due letti singoli",
+    "Camera 4 · due letti singoli"
+  ],
+  "amenities": [
+    "Piscina privata stagionale",
+    "Giardino privato",
+    "Parcheggio nella proprietà",
+    "Zona barbecue",
+    "Wi-Fi",
+    "Cucina attrezzata",
+    "Forno e frigorifero",
+    "Macchina del caffè",
+    "Lavatrice",
+    "Biancheria e asciugamani",
+    "Riscaldamento",
+    "Asciugacapelli"
+  ],
+  "rules": [
+    "Check-in: dalle 15:00, da concordare",
+    "Check-out: entro le 10:00",
+    "Non è consentito fumare all’interno",
+    "Feste ed eventi non consentiti",
+    "Animali: su richiesta"
+  ]
+}

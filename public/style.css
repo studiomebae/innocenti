@@ -235,3 +235,5 @@ dd { margin: 5px 0 0; }
   .contact-form-panel { padding: 20px 16px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card img { transition: none; } }
+/* Preserve paragraph breaks entered by the editor without accepting HTML. */
+.description, .intro > div > p, .service-grid p, .page-intro > p, .rules-grid p, .location-panel p { white-space: pre-line; }
